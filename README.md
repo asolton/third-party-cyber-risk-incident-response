@@ -130,25 +130,94 @@ The project includes a simulated incident involving a privileged service account
 
 ### Attack Path
 
+# SOC Telemetry Investigation
+
+The project was expanded to include a simulated SOC investigation using correlated authentication, endpoint, and network telemetry.
+
+The investigation focused on a privileged service account suspected of unauthorized activity within a production environment.
+
+## Investigation Data
+
+The investigation used three simulated telemetry sources:
+
+* `authentication_logs.csv` — authentication activity, source IPs, destination systems, and authentication methods
+* `endpoint_events.csv` — process execution, discovery activity, credential-access behavior, remote sessions, and data-access events
+* `network_events.csv` — internal connections, external communications, protocols, ports, transfer volumes, and security-control results
+
+## Investigation Process
+
+The investigation followed a correlation-based SOC workflow:
+
 ```text
-Compromised Credentials
+Authentication Telemetry
         ↓
-Valid Account Access
+Endpoint Telemetry
         ↓
-Production Environment Access
+Network Telemetry
         ↓
-Account Discovery
+Event Correlation
         ↓
-Network Discovery
+Incident Timeline
         ↓
-Credential Access
+Risk Classification
         ↓
-Lateral Movement
-        ↓
-Sensitive Data Access
-        ↓
-Potential Exfiltration
-        ↓
-SOC Detection
-        ↓
-Incident Response
+Containment & Escalation
+```
+
+### Key Observations
+
+The investigation identified:
+
+* Repeated authentication involving a privileged service account
+* Authentication from an unfamiliar source IP
+* Password-based authentication without MFA
+* PowerShell process execution
+* Account and privileged-group discovery
+* Network service scanning
+* Credential-access behavior
+* Remote session activity
+* Sensitive-data access
+* Data collection and archive creation
+* Increasing outbound network traffic
+* Large outbound transfer detection
+* Subsequent transfer blocking
+
+The evidence from multiple telemetry sources was correlated before making the final incident classification.
+
+## Incident Classification
+
+**Likely Security Incident Requiring Containment**
+
+The available evidence indicated a progression from privileged authentication and discovery activity through credential-access behavior, remote activity, sensitive-data access, data collection, and suspicious outbound network activity.
+
+The investigation did not assume successful credential theft or successful data exfiltration without additional validation.
+
+## Recommended Response
+
+The recommended response was to:
+
+1. Disable or isolate the affected privileged service account.
+2. Preserve relevant authentication, endpoint, and network evidence.
+3. Escalate the incident to the incident-response team.
+4. Validate the source IP and account activity.
+5. Determine whether credentials were successfully compromised.
+6. Determine whether sensitive information was successfully transferred.
+7. Investigate why earlier security alerts did not result in immediate containment.
+
+## SQL Investigation
+
+The repository also includes SQL investigation queries demonstrating how security telemetry could be analyzed in a relational database environment.
+
+The queries cover:
+
+* Privileged-account authentication
+* Unfamiliar authentication sources
+* Credential-access events
+* Account and group discovery
+* Remote activity
+* Sensitive-data access
+* Large outbound transfers
+* External network communication
+* Cross-source incident timeline correlation
+
+The SQL component is intended to demonstrate practical security-investigation logic while continuing to develop SQL proficiency.
