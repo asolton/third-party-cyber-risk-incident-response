@@ -258,7 +258,7 @@ Moderate findings should remain under active monitoring until remediation is com
 
 # Analyst Recommendation
 
-Based on the findings identified during this assessment, NorthStar Cloud Solutions should **not be rejected solely on the basis of the identified findings**.
+Based on the findings identified during this assessment, NorthStar Cloud Solutions should not be rejected solely on the basis of the identified findings.
 
 Instead, the vendor should be considered for:
 
