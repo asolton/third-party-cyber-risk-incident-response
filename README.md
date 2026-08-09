@@ -128,6 +128,7 @@ Risk ratings were used to determine which findings required immediate attention 
 
 The project includes a simulated incident involving a privileged service account.
 
+
 ### Attack Path
 
 # SOC Telemetry Investigation
@@ -221,3 +222,11 @@ The queries cover:
 * Cross-source incident timeline correlation
 
 The SQL component is intended to demonstrate practical security-investigation logic while continuing to develop SQL proficiency.
+
+## Skills Demonstrated
+
+**Cybersecurity:** Third-Party Risk Assessment • Incident Response • SOC Investigation • Risk Analysis • MITRE ATT&CK • Cyber Kill Chain
+
+**Technical:** Security Telemetry • Authentication Logs • Endpoint Events • Network Events • SQL • Git/GitHub
+
+**Analysis:** Event Correlation • Incident Timeline Development • Threat Detection • Containment • Evidence Preservation
