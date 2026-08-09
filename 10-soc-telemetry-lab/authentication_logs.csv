@@ -1,0 +1,16 @@
+timestamp,username,account_type,source_ip,destination_system,authentication_method,status,event_type
+2026-06-15 08:45:12,svc-backup,service,10.10.20.15,backup-server,service-token,Success,Service Authentication
+2026-06-15 08:52:31,jsmith,user,10.10.30.44,employee-portal,password+MFA,Success,User Authentication
+2026-06-15 09:01:08,svc-monitor,service,10.10.20.21,monitoring-server,service-token,Success,Service Authentication
+2026-06-15 09:08:44,asmith,user,10.10.30.51,employee-portal,password+MFA,Success,User Authentication
+2026-06-15 09:12:04,svc-production-admin,privileged-service,198.51.100.24,prod-app-01,password,Success,Privileged Authentication
+2026-06-15 09:13:27,svc-production-admin,privileged-service,198.51.100.24,prod-app-01,password,Success,Privileged Authentication
+2026-06-15 09:18:43,svc-production-admin,privileged-service,198.51.100.24,prod-db-01,password,Success,Privileged Authentication
+2026-06-15 09:22:16,svc-production-admin,privileged-service,198.51.100.24,prod-file-01,password,Success,Privileged Authentication
+2026-06-15 09:27:51,svc-production-admin,privileged-service,198.51.100.24,prod-admin-01,password,Success,Privileged Authentication
+2026-06-15 09:35:02,svc-production-admin,privileged-service,198.51.100.24,prod-app-02,password,Success,Privileged Authentication
+2026-06-15 09:51:19,svc-production-admin,privileged-service,198.51.100.24,prod-db-02,password,Success,Privileged Authentication
+2026-06-15 10:02:47,svc-production-admin,privileged-service,198.51.100.24,prod-file-02,password,Success,Privileged Authentication
+2026-06-15 10:14:33,svc-production-admin,privileged-service,198.51.100.24,prod-data-01,password,Success,Privileged Authentication
+2026-06-15 10:27:18,svc-production-admin,privileged-service,198.51.100.24,external-transfer-gateway,password,Success,Privileged Authentication
+2026-06-15 10:31:42,svc-production-admin,privileged-service,198.51.100.24,prod-app-01,password,Success,Privileged Authentication
