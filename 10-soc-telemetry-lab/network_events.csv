@@ -1,0 +1,20 @@
+timestamp,source_ip,source_host,username,destination_ip,destination_host,destination_port,protocol,connection_type,bytes_transferred,result
+2026-06-15 08:43:11,10.10.20.15,prod-app-01,svc-backup,10.10.20.30,backup-server,443,TCP,HTTPS,24567,Allowed
+2026-06-15 08:56:22,10.10.30.44,employee-01,jsmith,10.10.10.10,employee-portal,443,TCP,HTTPS,18452,Allowed
+2026-06-15 09:12:18,198.51.100.24,unknown,svc-production-admin,10.10.40.10,prod-app-01,443,TCP,HTTPS,12842,Allowed
+2026-06-15 09:18:52,198.51.100.24,unknown,svc-production-admin,10.10.40.20,prod-db-01,443,TCP,HTTPS,16421,Allowed
+2026-06-15 09:22:28,198.51.100.24,unknown,svc-production-admin,10.10.40.30,prod-file-01,445,TCP,SMB,23891,Allowed
+2026-06-15 09:27:58,198.51.100.24,unknown,svc-production-admin,10.10.40.40,prod-admin-01,3389,TCP,RDP,31984,Allowed
+2026-06-15 09:31:25,10.10.40.20,prod-db-01,svc-production-admin,10.10.40.10,prod-app-01,22,TCP,SSH,8421,Allowed
+2026-06-15 09:31:26,10.10.40.20,prod-db-01,svc-production-admin,10.10.40.30,prod-file-01,22,TCP,SSH,7312,Allowed
+2026-06-15 09:31:27,10.10.40.20,prod-db-01,svc-production-admin,10.10.40.40,prod-admin-01,3389,TCP,RDP,9122,Allowed
+2026-06-15 09:32:04,10.10.40.20,prod-db-01,svc-production-admin,10.10.40.50,prod-app-02,443,TCP,HTTPS,6821,Allowed
+2026-06-15 09:51:51,10.10.40.20,prod-db-01,svc-production-admin,10.10.40.60,prod-db-02,445,TCP,SMB,18742,Allowed
+2026-06-15 09:53:37,10.10.40.60,prod-db-02,svc-production-admin,10.10.40.30,prod-file-02,445,TCP,SMB,26451,Allowed
+2026-06-15 10:04:02,10.10.40.60,prod-file-02,svc-production-admin,10.10.40.70,prod-data-01,443,TCP,HTTPS,42183,Allowed
+2026-06-15 10:16:11,10.10.40.70,prod-data-01,svc-production-admin,10.10.40.70,prod-data-01,443,TCP,HTTPS,58214,Allowed
+2026-06-15 10:27:51,10.10.40.70,prod-data-01,svc-production-admin,203.0.113.50,external-transfer,443,TCP,HTTPS,5242880,Allowed
+2026-06-15 10:28:33,10.10.40.70,prod-data-01,svc-production-admin,203.0.113.50,external-transfer,443,TCP,HTTPS,10485760,Allowed
+2026-06-15 10:29:02,10.10.40.70,prod-data-01,svc-production-admin,203.0.113.50,443,TCP,HTTPS,52428800,Allowed
+2026-06-15 10:29:18,10.10.40.70,prod-data-01,svc-production-admin,203.0.113.50,443,TCP,HTTPS,104857600,Detected
+2026-06-15 10:35:41,10.10.40.70,prod-data-01,svc-production-admin,203.0.113.50,443,TCP,HTTPS,125829120,Blocked
