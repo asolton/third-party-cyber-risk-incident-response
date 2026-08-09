@@ -7,9 +7,9 @@
 
 ## Overview
 
-A simulated cybersecurity project focused on **third-party risk assessment, incident response, and SOC investigation**.
+A simulated cybersecurity project focused on third-party risk assessment, incident response, and SOC investigation.
 
-The project evaluates vendor security-control weaknesses, prioritizes risks, maps simulated attack activity to **MITRE ATT&CK Enterprise** and the **Cyber Kill Chain**, and investigates a simulated incident using authentication, endpoint, and network telemetry.
+The project evaluates vendor security-control weaknesses, prioritizes risks, maps simulated attack activity to MITRE ATT&CK Enterprise and the Cyber Kill Chain, and investigates a simulated incident using authentication, endpoint, and network telemetry.
 
 ## Key Findings
 
