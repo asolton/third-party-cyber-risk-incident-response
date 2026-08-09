@@ -1,0 +1,20 @@
+timestamp,hostname,username,process_name,parent_process,event_type,action,result
+2026-06-15 08:40:12,prod-app-01,svc-backup,backup-agent.exe,services.exe,Backup Activity,Create Backup,Success
+2026-06-15 08:55:47,prod-app-01,jsmith,chrome.exe,explorer.exe,User Activity,Web Access,Success
+2026-06-15 09:14:22,prod-app-01,svc-production-admin,powershell.exe,services.exe,Process Execution,Command Execution,Success
+2026-06-15 09:19:05,prod-db-01,svc-production-admin,powershell.exe,services.exe,Process Execution,Command Execution,Success
+2026-06-15 09:24:16,prod-db-01,svc-production-admin,cmd.exe,powershell.exe,Account Discovery,Account Enumeration,Success
+2026-06-15 09:26:44,prod-db-01,svc-production-admin,powershell.exe,cmd.exe,Group Discovery,Privileged Group Enumeration,Success
+2026-06-15 09:31:18,prod-db-01,svc-production-admin,network-scan.exe,powershell.exe,Network Discovery,Service Scanning,Success
+2026-06-15 09:36:52,prod-app-02,svc-production-admin,powershell.exe,services.exe,Process Execution,Command Execution,Success
+2026-06-15 09:42:07,prod-app-02,svc-production-admin,suspicious-process.exe,powershell.exe,Credential Access,Credential Store Access,Detected
+2026-06-15 09:44:31,prod-app-02,svc-production-admin,security-tool.exe,services.exe,Security Event,Credential Access Alert,Alerted
+2026-06-15 09:51:43,prod-db-02,svc-production-admin,powershell.exe,services.exe,Remote Activity,Remote Session Initiated,Success
+2026-06-15 09:53:29,prod-file-02,svc-production-admin,powershell.exe,services.exe,Remote Activity,Remote Session Initiated,Success
+2026-06-15 10:03:15,prod-file-02,svc-production-admin,file-access.exe,explorer.exe,Data Access,Sensitive Repository Access,Success
+2026-06-15 10:08:47,prod-file-02,svc-production-admin,file-access.exe,explorer.exe,Data Access,Large File Read,Success
+2026-06-15 10:15:22,prod-data-01,svc-production-admin,data-query.exe,services.exe,Data Collection,Sensitive Data Query,Success
+2026-06-15 10:21:54,prod-data-01,svc-production-admin,archive-tool.exe,services.exe,Data Collection,Data Archive Created,Success
+2026-06-15 10:27:42,prod-data-01,svc-production-admin,transfer-agent.exe,archive-tool.exe,Data Transfer,Outbound Transfer Initiated,Success
+2026-06-15 10:29:11,prod-data-01,svc-production-admin,transfer-agent.exe,archive-tool.exe,Data Transfer,Large Outbound Transfer,Detected
+2026-06-15 10:35:27,prod-data-01,svc-production-admin,security-agent.exe,services.exe,Security Event,Suspicious Activity Alert,Alerted
